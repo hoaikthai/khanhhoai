@@ -8,6 +8,10 @@
 	/*background-color: #BC7D7D;*/
 }
 
+.navbar-brand {
+	font-size: 1.5em;
+}
+
 h2 {
 	font-weight: bolder;
 	margin-bottom: 30px;
