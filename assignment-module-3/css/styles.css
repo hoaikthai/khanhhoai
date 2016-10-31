@@ -4,11 +4,6 @@
 	font-family: sans-serif;
 }
 
-#collapsable-nav {
-	background-color: #FFF8B9;
-	text-decoration-color: black;
-}
-
 .navbar-brand {
 	font-size: 1.5em;
 }
@@ -30,4 +25,10 @@ h3 {
 	background-color: lightgrey;
 	padding: 10px 10px;
 	margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+	#collapsable-nav {
+		background-color: #FFF8B9;
+	}
 }
