@@ -1,0 +1,57 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	padding: 0;
+}
+
+#collapsable-nav {
+	background-color: #212429;
+}
+
+.navbar-header {
+	background-color: #212429;
+}
+
+#header-nav {
+	border: 0;
+	border-radius: 0;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+#brand {
+	position: absolute;
+	left: 50%;
+	color: white;
+	display: block;
+	margin-left: -50px;
+	margin-top: auto;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.glyphicon {
+	border: 1px;
+	border-color: white;
+}
+
+#myCarousel {
+	width: 100%;
+}
+
+.carousel-inner {
+	width: 95%;
+	margin: 0 auto;
+}
+
+body {
+	background-color: #f9f9fb;
+}
