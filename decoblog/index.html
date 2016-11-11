@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -15,7 +16,7 @@
 			<div class="container">
 				<div class="navbar-header">
 					<div class="navbar-brand">
-						<a href="index.html"><h1 id="brand">Deco Blog</h1></a>
+						<a href="index.html"><img id="brand" src="images/logo.png"></a>
 					</div>
 
 					<button type="button" class="pull-left navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -96,12 +97,41 @@
 			</div> <!-- end tag container -->
 		</nav>
 	</header>
+
+	<div class="newsletter">
+		<div class="row">
+			<section class="col-lg-2 col-md-2">
+				<p id="signup-label">Signup to newsletters</p>
+			</section>
+
+			<section class="col-lg-4 col-md-4">
+				<input id="name-input" type="text" name="name" 
+				class="style-the-glow" placeholder="YOUR NAME">
+			</section>
+
+			<section class="col-lg-4 col-md-4">
+				<input id="email-input" type="text" name="email" class="style-the-glow" placeholder="YOUR EMAIL ADDRESS">
+			</section>
+
+			<section class="col-lg-2 col-md-2">
+				<button id="subcribe-button">
+					<img src="images/subcribe-button.png" width="100%">
+				</button>
+			</section>
+		</div>
+	</div> <!-- close newsletter -->
+
+	<div class="main-content">
+		
+	</div> <!-- close main-content -->
+
 	<footer class="panel-footer">
 		<div class="footer-container">
 			<div class="row">
 				<section id="about" class="footer-block col-lg-3 col-md-3">
 					<span class="footer-block-title">About Blog</span><br><br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br><br>
+					<img src="images/signature.png" width="90%">
 				</section>
 
 				<section id="tweets" class="footer-block col-lg-3 col-md-3">
@@ -114,14 +144,14 @@
 				<section id="follow" class="footer-block col-lg-3 col-md-3">
 					<span class="footer-block-title">Follow me instagram</span><br><br>
 					<a href="#">
-						<img src="images/followme.jpg" width="100%">
+						<img src="images/followme.jpg" width="90%">
 					</a>
 				</section>
 
 				<section id="about" class="footer-block col-lg-3 col-md-3">
 					<span class="footer-block-title">Latest comment</span><br><br>
 					<span>From Alex : </span><br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. <br><br><br>
 					<span>From John : </span><br>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 				</section>

@@ -29,13 +29,9 @@
 #brand {
 	position: absolute;
 	left: 50%;
-	color: white;
 	display: block;
 	margin-left: -50px;
 	margin-top: auto;
-	text-transform: uppercase;
-	font-size: 1.1em;
-	font-weight: bold;
 }
 
 .glyphicon {
@@ -49,13 +45,82 @@
 
 .carousel-inner {
 	width: 95%;
-	margin: 0 auto;
+	margin: auto;
 }
+
+/*------------------Body---------------*/
 
 body {
 	background-color: #f9f9fb;
 }
 
+/*----------------Newsletter-------------*/
+.newsletter {
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*.middle-vertical {
+	vertical-align: center;
+	display: inline-block;
+	float: none;
+	margin-right: -4px;
+}*/
+
+#signup-label {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+	letter-spacing: 3px;
+	padding: 0;
+	/*margin-right: 10px;*/
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  height: 39px;
+  font-size: 16px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+	padding-left: 10px;
+}
+
+#name-input {
+}
+
+#email-input {
+	margin-left: 10px;
+	width: 100%;
+}
+
+.style-the-glow{
+	border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+
+.style-the-glow:focus {
+	border: solid 1px #707070;
+	box-shadow: 0 0 5px 1px #969696;
+}
+
+#subcribe-button {
+	border: 0;
+	height: 39px;
+}
+
+/*------------------Footer-------------------*/
 .panel-footer {
 	background-color: #212429;
 	opacity: 80%;
@@ -82,6 +147,7 @@ section.footer-block {
 .end-footer {
 	background-color: #17191c;
 	margin: 0;
+	margin-top: 20px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
