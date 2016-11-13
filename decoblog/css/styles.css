@@ -156,8 +156,10 @@ input::-webkit-input-placeholder {
 	top: -17px;
 }
 
-.video-icon {
-	
+.video {
+	margin-top: 0;
+	position: relative;
+	top: -20px;
 }
 
 .category-name, .post-title, .post-date {
