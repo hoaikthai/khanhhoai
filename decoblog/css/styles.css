@@ -59,6 +59,7 @@ body {
 	width: 95%;
 	margin: 0 auto;
 	background-color: #f7f7f7;
+	padding-top: 10px;
 }
 
 /*.middle-vertical {
@@ -75,7 +76,7 @@ body {
 	float: left;
 	letter-spacing: 3px;
 	padding: 0;
-	/*margin-right: 10px;*/
+	margin-left: 20px;
 }
 
 input[type="text"] {
@@ -130,13 +131,13 @@ input::-webkit-input-placeholder {
 /*----------------Main Content-------------*/
 
 .main-content {
-	margin-top: 20px;
 	-moz-column-count: 4;
 	-moz-column-gap: 20px;
 	-webkit-column-count: 4;
 	-webkit-column-gap: 20px;
 	column-count: 4;
 	column-gap: 20px;
+	margin: 35px;
 }
 
 .main-content .post {
@@ -195,14 +196,15 @@ input::-webkit-input-placeholder {
 
 .link {
 	background-color: #212429;
-	opacity: 80%
+	opacity: 80%;
+	padding-bottom: 30px;
+	width: 100%;
 }
 
 .link-text {
 	text-decoration: underline;
 	color: white;
 	margin-top: 20px;
-	padding-bottom: 30px;
 }
 
 
