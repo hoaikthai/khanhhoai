@@ -130,7 +130,7 @@ input::-webkit-input-placeholder {
 /*----------------Main Content-------------*/
 
 .main-content {
-	margin-top: 50px;
+	margin-top: 20px;
 	-moz-column-count: 4;
 	-moz-column-gap: 20px;
 	-webkit-column-count: 4;
@@ -147,13 +147,17 @@ input::-webkit-input-placeholder {
 .post {
 	background-color: #ffffff;
 	position: relative;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 .type-icon {
 	position: relative;
 	left: 45%;
 	top: -17px;
+}
+
+.video-icon {
+	
 }
 
 .category-name, .post-title, .post-date {
@@ -166,18 +170,46 @@ input::-webkit-input-placeholder {
 	color: #999999;
 }
 
+.post-preview {
+	color: #838383;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.95em;
+	margin: 0 10px 10px 10px;
+}
+
+.quote {
+	background-color: #212429;
+	color: #ffffff;
+}
+
+.author-name {
+	color: #79797b;
+	padding-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.link {
+	background-color: #212429;
+	opacity: 80%
+}
+
+.link-text {
+	text-decoration: underline;
+	color: white;
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+
+
 .post-date {
 	margin-bottom: 10px;
 }
 
 .post-title {
 	color: #212121;
-}
-
-.post-preview {
-	color: #464646;
-	text-align: center;
-	margin: 0 10px 10px 10px;
 }
 
 .readmore-button {
