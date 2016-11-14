@@ -140,6 +140,10 @@ input::-webkit-input-placeholder {
 	margin: 35px;
 }
 
+.main-content2 {
+	margin: 50px 30px 30px 30px;
+}
+
 .main-content .post {
 	display: inline-block;
 	/*width: 100%;*/
@@ -152,8 +156,9 @@ input::-webkit-input-placeholder {
 }
 
 .type-icon {
+	display: block;
+	margin: auto;
 	position: relative;
-	left: 45%;
 	top: -17px;
 }
 
@@ -163,13 +168,13 @@ input::-webkit-input-placeholder {
 	top: -20px;
 }
 
-.category-name, .post-title, .post-date {
+.post-category, .post-title, .post-date, .post-info {
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 1px;
 }
 
-.category-name, .post-date {
+.post-category, .post-date {
 	color: #999999;
 }
 
@@ -192,6 +197,10 @@ input::-webkit-input-placeholder {
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+.post-author {
+	margin-right: 10px;
 }
 
 .link {
@@ -221,11 +230,18 @@ input::-webkit-input-placeholder {
 	margin: 0 auto 10px;
 }
 
-.comment {
+.comment, .like{
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 1px;
 	font-size: 0.8em;
 	color: #a6a6a6;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.comment {
+	margin-right: 20px;
+	margin-left: 10px;
 }
 
 .social {
@@ -234,6 +250,78 @@ input::-webkit-input-placeholder {
 	right: 0;
 	bottom: 10px;
 	margin-right: 15px;
+}
+
+.post-info p {
+	display: inline-block;
+	color: #999999;
+	font-size: 0.9em;
+}
+
+/*------------------Sidebar------------------*/
+
+.sidebar {
+	background-color: white;
+	margin-top: 50px;
+
+}
+
+.sidebar-content {
+	margin-top: 30px;
+}
+
+input[type="text"] #search-bar{
+
+}
+
+.search-button {
+	float: left;
+}
+
+.adsen {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.categories {
+	margin-top: 20px;
+	margin-bottom: 0;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	
+}
+
+.category-label {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+
+.category-name {
+	float: left;
+	color: black;
+}
+
+.category-number {
+	float: right;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.latest-posts {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.latest-post-label {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 0;
 }
 
 /*------------------Footer-------------------*/
@@ -267,6 +355,8 @@ section.footer-block {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+/*---------------Different screens------------------*/
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.main-content {
