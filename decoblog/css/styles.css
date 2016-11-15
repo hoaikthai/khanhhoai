@@ -289,7 +289,7 @@ input[type="text"] #search-bar{
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	
+	list-style-type: none;
 }
 
 .category-label {
@@ -310,12 +310,18 @@ input[type="text"] #search-bar{
 hr {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	clear: both;
 }
 
 .latest-posts {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+.latest-post {
+	list-style-type: none;
 }
 
 .latest-post-label {
@@ -324,6 +330,32 @@ hr {
 	margin-bottom: 0;
 }
 
+.latest-posts-img {
+	padding: 0;
+}
+
+.latest-post-content {
+	padding: 0;
+}
+
+.latest-post-info {
+	padding: 0;
+}
+
+.latest-post-date {
+	display: inline-block;
+	font-size: 0.8em;
+	color: #a6a6a6;
+	margin-right: 10px;
+}
+
+.social-icons {
+	margin-bottom: 20px;
+}
+
+.fb-iframe {
+	padding-bottom: 30px;
+}
 /*------------------Footer-------------------*/
 .panel-footer {
 	background-color: #212429;
