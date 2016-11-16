@@ -9,6 +9,16 @@
 	padding: 0;
 }
 
+.dropdown {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.btn-primary {
+	background-color: #212429;
+}
+
 #collapsable-nav {
 	background-color: #212429;
 }
@@ -174,11 +184,15 @@ input::-webkit-input-placeholder {
 	letter-spacing: 1px;
 }
 
+.post-title:hover, .post-title:focus {
+	text-decoration: none;
+}
+
 .post-category, .post-date {
 	color: #999999;
 }
 
-.post-preview {
+.post-preview, .tag {
 	color: #838383;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
@@ -230,6 +244,17 @@ input::-webkit-input-placeholder {
 	margin: 0 auto 10px;
 }
 
+.tag {
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+.reaction {
+	width: 33%;
+	margin-right: 0;
+}
+
+
 .comment, .like{
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 1px;
@@ -243,6 +268,48 @@ input::-webkit-input-placeholder {
 	margin-right: 20px;
 	margin-left: 10px;
 }
+
+.rating { 
+  border: none;
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+  left: 45%;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ 	float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { 
+	color: #FFD700;  
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { 
+	color: #FFED85;  
+} 
 
 .social {
 	position: absolute;
@@ -258,6 +325,144 @@ input::-webkit-input-placeholder {
 	font-size: 0.9em;
 }
 
+.direction {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	margin-top: 50px;
+	height: 100px;
+}
+
+.direction-button {
+	color: white;
+	width: 48%;
+}
+
+.direction-button:hover, .direction-button:focus {
+	color: white;
+	text-decoration: none;
+}
+
+.pre-button {
+	background-color: black;
+	float: left;
+}
+
+.next-button {
+	float: right;
+	background-color: #3a3c49;
+}
+
+.pre-text, .next-text {
+	vertical-align: middle;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	letter-spacing: 2px;
+}
+
+.about-author {
+	margin-top: 30px;
+	background-color: white;
+	position: relative;
+	display: block;
+	overflow: auto;
+}
+
+.author-avatar {
+	display: inline-block;
+	float: left;
+}
+
+.author-info {
+	display: inline-block;
+	float: left;
+	width: 60%;
+	margin-left: 30px;
+}
+
+.author {
+	margin-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: black;
+}
+
+.author-allposts {
+	margin-top: 10px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #3e3e3e;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+.author-allposts:hover, .author-allpost:focus {
+	color: #3e3e3e;
+	text-decoration: none;
+}
+
+.author-quote {
+	font-family: 'Montserrat', sans-serif;
+	color: #747474;
+}
+
+.author-social {
+	margin-top: 10px;
+}
+
+.author-facebook, .author-twitter, .author-linked {
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+label {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.recommended-posts {
+	margin-top: 30px;
+	background-color: white;
+}
+
+.recommend-label {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#recommend-carousel {
+	margin: 20px;
+}
+
+.recommend-carousel-control {
+	height: 40px;
+	position: absolute;
+	top: -55px;
+	width: 50px;
+	display: inline-block;
+	background-color: black;
+	display: block;
+	overflow: none;
+}
+
+#glyph {
+	font-size: 0.9em;
+}
+
+.recommend-carousel-control-left {
+	left: 80%;
+	margin-right: 20px;
+}
+
+.recommend-carousel-control-right {
+	margin-right: 20px;
+}
 /*------------------Sidebar------------------*/
 
 .sidebar {
