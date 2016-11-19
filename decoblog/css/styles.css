@@ -430,6 +430,7 @@ label {
 .recommended-posts {
 	margin-top: 30px;
 	background-color: white;
+	position: relative;
 }
 
 .recommend-label {
@@ -443,27 +444,25 @@ label {
 
 .recommend-carousel-control {
 	height: 40px;
-	position: absolute;
-	top: -55px;
+	position: relative;
 	width: 50px;
+	opacity: 1;
+	float: right;
+	padding: 0;
+
+}
+
+.c-control {
 	display: inline-block;
-	background-color: black;
-	display: block;
-	overflow: none;
+	position: absolute;
+	top: 15px;
+	right: 25px;
 }
 
-#glyph {
-	font-size: 0.9em;
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
 }
 
-.recommend-carousel-control-left {
-	left: 80%;
-	margin-right: 20px;
-}
-
-.recommend-carousel-control-right {
-	margin-right: 20px;
-}
 /*------------------Sidebar------------------*/
 
 .sidebar {
